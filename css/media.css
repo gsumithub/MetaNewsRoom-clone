@@ -1,0 +1,129 @@
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+    header, .secondHeader{
+    display: none;
+  }
+  .mobileHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .mobileHeader .logo{
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+    .mobileHeader .menuIcon{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .mobileHeader .menuIcon:hover{
+        color: #ff6600;
+    }
+    .mobileHeader .searchIcon{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .mobileHeader .searchIcon:hover{
+        color: #ff6600;
+    }
+    .gallery{
+        margin-top: 60px; /* To avoid content being hidden behind the fixed header */
+    }
+    .gallerymid{
+        flex-direction: column;
+        padding: 0px 10px;
+        max-width: 100%;
+    }
+    .gif > figure {
+    width: 100%;         
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 260px;   
+    }
+    .gallery img {
+    max-width: 100%;
+    height: auto;
+    }
+
+    .newsitem {
+    width: 100%;
+    }
+
+    .newsimg,
+    .mainnewsimg {
+    max-width: 100%;
+    width: 100%;
+    }
+    .main{
+        padding: 0px 10px;
+        
+    }
+    .maincontent{
+        padding: 0px 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .newsitem{
+        margin-bottom: 30px;
+        flex-direction: column!important;
+    }
+    .followmeta{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0%;
+    }
+    .follow-newsroom{
+        padding: 0%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .press-links{
+        padding: 0%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .divider{
+        display: none;
+    }
+    .footer-links {
+    grid-template-columns: 1fr;
+    }
+
+    .footer-socials {
+        margin-top: 16px;
+    }
+}
+@media (max-width: 900px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
