@@ -443,7 +443,7 @@
 }
 .gif > figure{
     max-width: 615px;
-    background-image: url("../images/gif/SAM3_Thumbnail-1.gif");
+    background-image: url("./images/gif/SAM3_Thumbnail-1.gif");
     background-size: cover;
     background-position: center;
     min-height: 462px;
