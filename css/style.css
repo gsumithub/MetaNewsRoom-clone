@@ -418,10 +418,12 @@
     font-size: 14px;
     color: #777;
 }
-.firstHeader,
-.secondHeader {
+.firstHeader{
     position: sticky;
     top: 0;
+}
+.secondHeader {
+    
      /* higher than overlay */
 }
 
